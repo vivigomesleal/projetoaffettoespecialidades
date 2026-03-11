@@ -96,6 +96,48 @@ button, .dropdown-toggle {
    flex-direction: column;
 }
 
+/* MOBILE SLIDER */
+
+.hero {
+  padding: 10px;
+}
+
+.hero-images{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  padding:0;
+  overflow:hidden;
+}
+
+/* todas as imagens ocupam o fundo */
+
+.hero-images .slide{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:0;
+  box-shadow:none;
+
+  opacity:0;
+  transition:opacity 2s ease;
+}
+
+/* imagem ativa */
+
+.hero-images .slide.active{
+  opacity:1;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+
+
 .hero h1 {
     font-size: 1.5rem;
   }
@@ -117,21 +159,68 @@ button, .dropdown-toggle {
     box-shadow: 0 18px 40px rgba(0,0,0,0.15);
   }
 
- 
+ .pilares-clinica{
+  padding:0.5rem;
+}
 
-.card img,
-  .card-desc {
-    display: none;
+
+
+.card-desc {
+    font-size: 1rem;
+  }
+
+  .pilares-container{
+  max-width:300px;
+  gap:10px;
+}
+
+.pilar-card{
+  max-width:400px;
+  padding:0;
+}
+
+.pilar-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+
+.about {
+    padding: 1em;
+  }
+
+.about h2 {
+    margin-bottom: 0.2rem;
+    font-size: 1.5rem;
+  } 
+
+  .cards {
+    padding: 1rem;
+    gap: 5px;
   }
 
   .card {
-    padding: 1.2rem;
+    padding: 0.5rem;
   }
 
   .card h3 {
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin: 0;
   }
 
+.card img {
+    width: 200px;
+    height: 100px;
+  }
+
+.servicos {
+    padding: 1em;
+  
+}
+
+.servicos h2 {
+    font-size: 1.5rem;
+  }
   
 .cta {
     padding: 0.5rem;
@@ -139,6 +228,23 @@ button, .dropdown-toggle {
 
 .cta p {
     font-size: 1rem;
+  }
+
+.especialidade-conteudo p {
+    font-size: 1rem;
+  }
+
+.info-lista li {
+   font-size: 1rem;
+}
+
+.sobre {
+    padding: 1em;
+  }
+
+  .responsavel img {
+    width: 80%;
+    
   }
 
 .footer-container{
