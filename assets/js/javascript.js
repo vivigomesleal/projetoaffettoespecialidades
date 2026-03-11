@@ -44,6 +44,31 @@ document.querySelectorAll('.dropdown-menu a').forEach(link => {
   });
 });
 
+// IMAGEM SLIDER PARA VERSAO MOBILE
+const slides = document.querySelectorAll(".hero-images img");
+let slideIndex = 0;
+
+function trocarSlide(){
+
+  slides.forEach(function(slide){
+    slide.classList.remove("active");
+  });
+
+  slides[slideIndex].classList.add("active");
+
+  slideIndex++;
+
+  if(slideIndex >= slides.length){
+    slideIndex = 0;
+  }
+
+}
+
+trocarSlide();
+
+setInterval(trocarSlide, 10000);
+
+
 
 
   const track = document.querySelector('.carousel-track');
